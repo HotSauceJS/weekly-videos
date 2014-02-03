@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The Ultimate Guide To Node.js | Landing Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Ultimate Guide To Node.js, landing page design">
+    <meta name="author" content="">
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/woody-landing.css" rel="stylesheet">
+    <!-- Google Web Font-->
+    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,600' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- fav icons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div id="box" class="span6 offset3">
+            <h1>Free Weekly Node.js Videos</h1>
+            <h1><span class="bold"><strong>Plus, Get The Ultimate Guide To Node.js</strong> For Free</h1>
+            <h2>Every week I record a new Node.js screencast covering development, libraries and troubleshooting.</h2>
+            <h2>Sign up for free and I'll send you a coupon to get <a href="#">my complete Node.js course</a> for free.</h2>
+            <h3>Pssst... I'll never share your e-mails because that's stupid.</h3>
+
+            <div id="signup">
+                <form id="form" class="form-inline">
+                    <input type="text" value="" name="email" class="input-xlarge email" id="email" placeholder="Your email address">
+                    <input type="submit" value="Sign Up For Weekly Videos" name="subscribe" class="btn btn-warning"><br/>
+                </form>
+            </div>
+            <h5><small>&copy; 2012 Hotsauce.js</small></h5>
+        </div>
+    </div>
+</div><!--end container-->
+
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/bootstrap-tooltip.js"></script>
+<script type="text/javascript" src="js/bootstrap-popover.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#form").validate({
+        rules: {
+            email: "required",
+        },
+        highlight: function(element, errClass) {
+            $("#email").popover('show');
+        },
+        unhighlight: function(element, errClass) {
+            $("#email").popover('hide');
+        },
+        errorPlacement: function(err, element) {
+            err.hide();
+        },
+    });
+    $("#email").popover({
+        placement: 'top',
+        trigger: 'manual',
+        content: 'Please insert a valid email address.',
+    });
+});
+</script>
+</body>
+</html>

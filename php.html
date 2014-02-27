@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46177205-1', 'hotsaucejs.com');
+  ga('send', 'pageview');
+
+</script>
+    
+    <meta charset="utf-8">
+    <title>Go From PHP To Node.js, Fast | Free Weekly Node.js Videos In Your Email</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Ultimate Guide To Node.js, landing page design">
+    <meta name="author" content="">
+    <!-- Styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="css/woody-landing.css" rel="stylesheet">
+    <!-- Google Web Font-->
+    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,600' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- fav icons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div id="box" class="span8 offset2">
+            <h1>Go From PHP To Node.js, Fast</h1>
+            <h1>Free Weekly Node.js Videos In Your Email</h1>
+            <h2>PHP programmers everywhere are looking to figure out what this Node.js thing is all about. What's it good for, how do you learn it and how can it help make you a better programmer?</h2>
+            <h2>Get a new Node.js screencast in your email once a week. These videos will cover best practices, code reviews, problem-solving and working with different packages.</h2>
+
+            <h4>When you sign up, you'll get 50% off <a href="https://www.udemy.com/the-ultimate-guide-to-nodejs-express/" target="_BLANK">The Ultimate Guide To Node.js + Express</a>.</h4>
+            <hr />
+
+            <div id="signup">
+            <h3>Pssst... I'll never share your e-mails because that's stupid.</h3>
+
+<form action="http://twitter.us2.list-manage.com/subscribe/post?u=50350daf6a7910bab56d83f95&amp;id=ed60460d3c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    
+<div class="mc-field-group">
+    <input type="email" value="" name="EMAIL" class="input-xlarge email required email" id="mce-EMAIL" placeholder="Your Email Address">
+</div>
+    <div id="mce-responses" class="clear">
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_50350daf6a7910bab56d83f95_ed60460d3c" value=""></div>
+    <div class="clear"><input type="submit" value="Sign Up For Weekly Videos" name="subscribe" id="mc-embedded-subscribe" class="btn btn-warning button"></div>
+</form>
+
+
+
+            </div>
+            <hr />
+
+            <h5><small>&copy; 2014 <a href="http://www.hotsaucejs.com" target="_BLANK">HotsauceJS</a></small></h5>
+        </div>
+    </div>
+</div><!--end container-->
+
+<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/bootstrap-tooltip.js"></script>
+<script type="text/javascript" src="js/bootstrap-popover.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#form").validate({
+        rules: {
+            email: "required",
+        },
+        highlight: function(element, errClass) {
+            $("#email").popover('show');
+        },
+        unhighlight: function(element, errClass) {
+            $("#email").popover('hide');
+        },
+        errorPlacement: function(err, element) {
+            err.hide();
+        },
+    });
+    $("#email").popover({
+        placement: 'top',
+        trigger: 'manual',
+        content: 'Please insert a valid email address.',
+    });
+});
+</script>
+</body>
+</html>
